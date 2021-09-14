@@ -1,3 +1,12 @@
+if exists('g:loaded_iamnotaquitter') | finish | endif
+let g:loaded_iamnotaquitter = 1 "Don't load twice
+
+
+"A vim best practise
+let s:save_cpo = &cpo
+set cpo&vim
+
+
 function! s:randnum(max) abort
   return str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:]) % a:max
 endfunction
@@ -46,3 +55,6 @@ augroup I_Am_Not_A_Quitter
   autocmd CmdlineEnter : let s:isk_save = &l:iskeyword | setlocal iskeyword+=!
   autocmd CmdlineLeave : let &l:iskeyword = s:isk_save
 augroup END
+
+let &cpo = s:save_cpo
+unlet s:save_cpo
