@@ -7,13 +7,13 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-function! s:randnum(max) abort
+function! Randnum(max) abort
   return str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:]) % a:max
 endfunction
 
 
 function! Affirmation()
-    let index = randnum(4)
+    let index = Randnum(4)
     let affirmations = [
                 \"I am not a quitter.",
                 \"I can do this. I will never quit vim. End of story.",
