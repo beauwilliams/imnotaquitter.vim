@@ -1,4 +1,4 @@
-#  imnotaquitter.nvim
+#  imnotaquitter.vim
 
 It is designed to correct your bastard ways through positive reinforcement so you too never quit vim like the pros do.
 
