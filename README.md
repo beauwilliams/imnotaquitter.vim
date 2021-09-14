@@ -6,7 +6,7 @@ It comes with a bonus command, break incase of emergency, only to be used as a l
 
 Try it out, q!, q, wq, ZZ. See what happens!
 
-There are a list of affirmations to keep encouraging you to never be a quitter.
+There are a list of positive affirmations included to encourage you to never be a quitter.
 
 # Screenshot
 
