@@ -1,6 +1,6 @@
 # imnotaquitter.vim
 
-It is designed to correct your bastard ways through positive reinforcement so you too never quit vim like the pros do.
+It is designed to correct your bastard ways through positive reinforcement so you too never quit vim like the pros.
 
 It comes with a bonus command, break incase of emergency, only to be used as a last resort when you have no choice but to be a quitter.
 
