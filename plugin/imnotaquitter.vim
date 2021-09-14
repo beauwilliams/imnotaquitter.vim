@@ -47,7 +47,7 @@ cnoreabbrev <expr> wqa! (IAmNotAQuitter()) ? '' : 'wa!'
 cnoreabbrev <expr> wqall (IAmNotAQuitter()) ? '' : 'wa'
 cnoreabbrev <expr> wqall! (IAmNotAQuitter()) ? '' : 'wa!'
 cnoreabbrev <expr> x (IAmNotAQuitter()) ? '' : 'w'
-map ZZ <cmd> call IAmNotAQuitter()<cr> <bar> <silent><cmd>w<cr>
+map ZZ <cmd> call IAmNotAQuitter()<cr> <bar> <cmd>w<cr>
 command! -bang LETMEOUTOFHERE qall<bang>
 
 augroup I_Am_Not_A_Quitter
