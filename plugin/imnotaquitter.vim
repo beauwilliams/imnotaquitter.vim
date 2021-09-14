@@ -1,5 +1,5 @@
-if exists('g:loaded_iamnotaquitter') | finish | endif
-let g:loaded_iamnotaquitter = 1 "Don't load twice
+if exists('g:loaded_imnotaquitter') | finish | endif
+let g:loaded_imnotaquitter = 1 "Don't load twice
 
 
 "A vim best practise
@@ -24,33 +24,33 @@ function! Affirmation()
     return affirmations[index]
 endfunction
 
-function! IAmNotAQuitter()
+function! ImNotAQuitter()
       if (confirm(Affirmation(), "&Okay", 1)!=1)
         return v:false
       endif
 endfunction
 
-cnoreabbrev <expr> q (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> q! (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> quit (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> quit! (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> qa (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> qa! (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> qall (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> qall! (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> quitall (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> quitall! (IAmNotAQuitter()) ? '' : ''
-cnoreabbrev <expr> wq (IAmNotAQuitter()) ? '' : 'w'
-cnoreabbrev <expr> wq! (IAmNotAQuitter()) ? '' : 'w!'
-cnoreabbrev <expr> wqa (IAmNotAQuitter()) ? '' : 'wa'
-cnoreabbrev <expr> wqa! (IAmNotAQuitter()) ? '' : 'wa!'
-cnoreabbrev <expr> wqall (IAmNotAQuitter()) ? '' : 'wa'
-cnoreabbrev <expr> wqall! (IAmNotAQuitter()) ? '' : 'wa!'
-cnoreabbrev <expr> x (IAmNotAQuitter()) ? '' : 'w'
-map ZZ <cmd> call IAmNotAQuitter()<cr> <bar> <cmd>w<cr>
+cnoreabbrev <expr> q (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> q! (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> quit (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> quit! (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> qa (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> qa! (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> qall (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> qall! (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> quitall (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> quitall! (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> wq (ImNotAQuitter()) ? '' : 'w'
+cnoreabbrev <expr> wq! (ImNotAQuitter()) ? '' : 'w!'
+cnoreabbrev <expr> wqa (ImNotAQuitter()) ? '' : 'wa'
+cnoreabbrev <expr> wqa! (ImNotAQuitter()) ? '' : 'wa!'
+cnoreabbrev <expr> wqall (ImNotAQuitter()) ? '' : 'wa'
+cnoreabbrev <expr> wqall! (ImNotAQuitter()) ? '' : 'wa!'
+cnoreabbrev <expr> x (ImNotAQuitter()) ? '' : 'w'
+map ZZ <cmd> call ImNotAQuitter()<cr> <bar> <cmd>w<cr>
 command! -bang LETMEOUTOFHERE qall<bang>
 
-augroup I_Am_Not_A_Quitter
+augroup Im_Not_A_Quitter
   autocmd!
   autocmd CmdlineEnter : let s:isk_save = &l:iskeyword | setlocal iskeyword+=!
   autocmd CmdlineLeave : let &l:iskeyword = s:isk_save
