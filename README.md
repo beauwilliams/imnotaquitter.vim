@@ -8,9 +8,18 @@ Try it out, q!, q, wq, ZZ. See what happens!
 
 There are a list of positive affirmations included to encourage you to never be a quitter.
 
+
 # Screenshot
 
 ![](https://i.ibb.co/ZYqsC5M/Screen-Shot-2021-09-14-at-1-38-49-pm.png)
+
+
+# Install
+
+Using your favourite package manager, i.e vim-plug
+
+`Plug beauwilliams/imnotaquitter.vim`
+
 
 # Break in case of emergency
 
