@@ -1,5 +1,10 @@
+function! s:randnum(max) abort
+  return str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:]) % a:max
+endfunction
+
+
 function! Affirmation()
-    let index = luaeval('math.random(0, 4)')
+    let index = randnum(4)
     let affirmations = [
                 \"I am not a quitter.",
                 \"I can do this. I will never quit vim. End of story.",
