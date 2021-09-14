@@ -19,7 +19,7 @@ There are a list of positive affirmations included to encourage you to never be 
 Using your favourite package manager, i.e vim-plug
 
 ```vim
-`Plug beauwilliams/imnotaquitter.vim`
+Plug beauwilliams/imnotaquitter.vim
 ```
 
 # Break in case of emergency
