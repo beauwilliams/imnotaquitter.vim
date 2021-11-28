@@ -54,6 +54,10 @@ cnoreabbrev <expr> xit (ImNotAQuitter()) ? '' : 'w'
 cnoreabbrev <expr> x! (ImNotAQuitter()) ? '' : 'w!'
 cnoreabbrev <expr> xall! (ImNotAQuitter()) ? '' : 'wa!'
 cnoreabbrev <expr> xa! (ImNotAQuitter()) ? '' : 'wa!'
+cnoreabbrev <expr> cq (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> :q (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> vim.cmd'q' (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> execute('q') (ImNotAQuitter()) ? '' : ''
 map ZZ <cmd> call ImNotAQuitter()<cr> <bar> <cmd>w<cr>
 map ZQ <cmd> call ImNotAQuitter()<cr>
 command! -bang LETMEOUTOFHERE qall<bang>
