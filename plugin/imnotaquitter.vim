@@ -33,6 +33,7 @@ endfunction
 cnoreabbrev <expr> q (ImNotAQuitter()) ? '' : ''
 cnoreabbrev <expr> q! (ImNotAQuitter()) ? '' : ''
 cnoreabbrev <expr> qu (ImNotAQuitter()) ? '' : ''
+cnoreabbrev <expr> qu! (ImNotAQuitter()) ? '' : ''
 cnoreabbrev <expr> quit (ImNotAQuitter()) ? '' : ''
 cnoreabbrev <expr> quit! (ImNotAQuitter()) ? '' : ''
 cnoreabbrev <expr> qa (ImNotAQuitter()) ? '' : ''
