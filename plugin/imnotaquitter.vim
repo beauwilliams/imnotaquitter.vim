@@ -47,6 +47,11 @@ cnoreabbrev <expr> wqa! (ImNotAQuitter()) ? '' : 'wa!'
 cnoreabbrev <expr> wqall (ImNotAQuitter()) ? '' : 'wa'
 cnoreabbrev <expr> wqall! (ImNotAQuitter()) ? '' : 'wa!'
 cnoreabbrev <expr> x (ImNotAQuitter()) ? '' : 'w'
+cnoreabbrev <expr> exit (ImNotAQuitter()) ? '' : 'w'
+cnoreabbrev <expr> xit (ImNotAQuitter()) ? '' : 'w'
+cnoreabbrev <expr> x! (ImNotAQuitter()) ? '' : 'w!'
+cnoreabbrev <expr> xall! (ImNotAQuitter()) ? '' : 'wa!'
+cnoreabbrev <expr> xa! (ImNotAQuitter()) ? '' : 'wa!'
 map ZZ <cmd> call ImNotAQuitter()<cr> <bar> <cmd>w<cr>
 map ZQ <cmd> call ImNotAQuitter()<cr>
 command! -bang LETMEOUTOFHERE qall<bang>
